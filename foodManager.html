@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style1.css">
+  <title>Food manager</title>
+</head>
+<body class="container0">
+  <form>
+    <h2>Quản lý món ăn</h2>
+    <div>
+      <label>
+        Tên món ăn:
+        <br>
+        <input type="text" placeholder="Nhập tên món ăn" size="32" id="tenPr">
+      </label>
+      <label>
+        Mô tả món ăn:
+        <br>
+        <input type="text" placeholder="Mô ta món ăn" size="32" id="motaPr">
+      </label>
+      <label>
+        Giá:
+        <br>
+        <input type="text" placeholder="Nhập giá món ăn" size="32" id="gia">
+      </label>
+      <label> 
+        Chọn hình ảnh:
+        <br>
+        <input type="file" id="anhPr" onchange="uploadImg(event)">
+      </label>
+  </div>
+  </form>
+  <button class="btn btn-warning" style="color: white;" onclick="addProduct();">Thêm</button>
+  <button class="btn btn-danger" onclick="reset();">Hủy</button>
+  <button class="btn btn-info" onclick="show()">Danh sách món ăn</button> 
+  <button class="btn btn-success" id="luu" onclick="Update()">Lưu chỉnh sửa</button>
+  
+  <br>
+  <br>
+    <table class="table" id= "tblFood" style="text-align: center;">
+      <thead class="thead-light">
+        <tr>
+            <th>STT</th>
+            <th>Sản Phẩm</th>
+            <th>Giá tiền</th>
+            <th>Thao tác</th>
+        </tr>
+      </thead>
+      <tbody id="tbd">
+
+      </tbody>
+    </table>
+</body>
+<script src="mainFood.js"></script>
+</html>

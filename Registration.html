@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+  <title>Document</title>
+</head>
+<body class="container">
+  <form class="registration">
+    <h1>Đăng ký</h1>
+    <div>
+        <label>
+            Họ tên:
+            <br>
+            <input type="text" size="32" id="hoten">
+        </label>
+    </div>
+    <div>
+      <label>
+          Địa chỉ:
+          <br>
+          <input type="text" size="32" id="diachi">
+      </label>
+    </div>
+    <div>
+      <label>
+          Số điện thoại:
+          <br>
+          <input type="text" size="32" id="sodt">
+      </label>
+    </div>
+    <div>
+      <label>
+          Tên đăng nhập:
+          <br>
+          <input type="text" size="32" id="tendn">
+      </label>
+    </div>
+    <div>
+        <label>
+            Nhập mật khẩu:
+            <br>
+            <input type="password" size="32" id="mk">
+        </label>
+    </div>
+    <div>
+      <label>
+          Xác nhận mật khẩu:
+          <br>
+          <input type="password" size="32" id="xnmk">
+      </label>
+    </div>
+    <div>
+        <button type="button" onclick="Registration()" class="btn btn-warning">Đăng ký</button>
+        <button type="button" onclick="Reset()" class="btn btn-warning">Hủy</button>
+        <p>Bạn đã đăng ký tài khoản ? <a href="/login.html">đăng nhập</a></p>
+        <p>Thông tin khách hàng <a href="/CustomerManager.html">click me</a></p>
+    </div>
+  </form>
+  
+</body>
+<script src="mainCus.js"></script>
+</html>

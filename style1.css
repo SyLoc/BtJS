@@ -1,0 +1,60 @@
+.login{
+    border: 3px solid rgb(53, 31, 250);
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    text-align: center;
+    margin: auto;
+}
+#txt1{
+  text-align: left;
+}
+.container0{
+  padding: 20px 100px;
+}
+.registration{
+  border: 3px solid rgb(53, 31, 250);
+  border-radius: 5px;
+  width: 500px;
+  height: 600px;
+  text-align: center;
+  margin: auto;
+}
+label{
+  font-weight: bold;
+  text-align: left;
+  border:2px solid #ffff;
+}
+
+#addkh{
+  color: white; 
+  text-decoration: none;
+}
+
+#btn-delete{
+  background-color: #ec2626;
+  margin: 3px;
+  border: 5px;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+}
+i{
+  color: white;
+}
+#btn-edit{
+  background-color: #ffad33;
+  margin: 3px;
+  border: 5px;
+  border-radius: 5px;
+  height: 35px;
+  width: 35px;
+}
+h3{
+  text-align: center;
+  font-weight: bolder;
+}
+
+#luu{
+  display: none;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style1.css">
+  <title>form 3</title>
+</head>
+<body class="container">
+  <br>
+  <button class="btn btn-danger" onclick="Show()">Hiển thị thông tin khách hàng</button>
+  <button class="btn btn-warning" ><a id="addkh" href='/Registration.html'>Thêm khách hàng</a></button>
+  <br>
+  <br>
+  <table class="table table-hover" id= "tbl" style="text-align: center;">
+    <thead class="thead-light">
+        <tr>
+            <th>STT</th>
+            <th>Tên Khách hàng</th>
+            <th>Địa chỉ</th>
+            <th>Số Điện thoại</th>
+            <th>Thao tác</th>
+        </tr>
+    </thead>
+
+    <tbody id="kq">
+    </tbody>
+    
+  </table>
+  <br>
+  <form id="frmEdit" style="display: none;">
+    <hr>
+    <h3>Chỉnh sửa</h3>
+    <br>
+    <div>
+        <label>
+            Họ tên:
+            <br>
+            <input type="text" size="32" id="hoten">
+        </label>
+   
+      <label>
+          Địa chỉ:
+          <br>
+          <input type="text" size="32" id="diachi">
+      </label>
+    
+      <label>
+          Số điện thoại:
+          <br>
+          <input type="text" size="32" id="sodt">
+      </label>
+    
+      <label>
+          Tên đăng nhập:
+          <br>
+          <input type="text" size="32" id="tendn">
+      </label>
+    </div>
+    <div style="text-align: center;">
+        <button type="button" onclick="Save()" class="btn btn-warning btn-lg btn-block">Lưu</button>
+    </div>
+  </form>
+  
+</body>
+<script src="mainCus.js"></script>
+</html>
